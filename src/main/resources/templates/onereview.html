@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Movie Reviews</title>
+	<link rel="stylesheet" type="text/css" href="/css/styles.css"/>
+</head>
+<body>
+	<header>
+		<h1>Lounge Room Movie Reviews</h1>
+	</header>
+	<div class="layout__body">
+		<div class="main">
+
+			<img th:src="${onereview.imageUrl}"/>
+
+			<p th:text="'Id: ' + ${onereview.id}"></p>
+			<p th:text="'Title: ' + ${onereview.title}"></p>
+			<p th:text="'Category: ' + ${onereview.reviewCategory}"></p>
+			<p th:text="'Review: ' + ${onereview.content}"></p>
+			<p th:text="'Date: ' + ${onereview.date}"></p>
+			<p th:text="'Synopsis: ' + ${onereview.synopsis}"></p>
+
+		</div>
+		<nav class="layout__nav layout__columns"></nav>
+		<div class="layout__columns"></div>
+	</div>
+	<footer>
+	<p> Lounge Room Movie Reviews</p>
+	</footer>
+
+</body>
+</html>
