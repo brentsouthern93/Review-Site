@@ -1,6 +1,6 @@
 # Review-Site
 
-copy link below to view site:
+click link below to view site:
 http://localhost:8080/reviews
 
 -This is my website that reviews 3 different movies so far.
